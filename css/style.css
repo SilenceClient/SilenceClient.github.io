@@ -1,0 +1,101 @@
+#background {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+
+#rect {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    height: 200px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 25px;
+    backdrop-filter: blur(20px);
+}
+
+
+#rect {
+    backdrop-filter: blur(20px);
+}
+
+#logo {
+    position: absolute;
+    top: 17%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-family: 'Intelone', sans-serif;
+    font-size: 40px;
+}
+
+@font-face {
+    font-family: 'Intelone';
+    src: url('data/IntelOne.ttf');
+}
+
+.glow {
+    animation-name: glow;
+    animation-duration: 86400s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    opacity:1;
+}
+
+@keyframes glow {
+    0% {
+      text-shadow: 0 0 10px rgba(255, 255, 255, 1),
+                   0 0 20px rgba(255, 255, 255, 1),
+                   0 0 30px rgba(255, 255, 255, 1),
+                   0 0 40px rgba(255, 255, 255, 1);
+      color: rgba(255, 255, 255, 1);
+      opacity:1;
+    }
+}
+
+.button {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.7);  
+    border: none;            
+    border-radius: 15px;
+
+    font-size: 18px;     
+    color: white; 
+    font-weight: 500;
+    text-align: center;   
+    line-height: 50px;  
+    cursor: pointer;          
+    
+    transition: background-color 1s ease;
+
+    &:hover {
+        width: 405px;
+        height: 55px;
+        background-color: rgba(22, 22, 22, 0.7);  
+        line-height: 55px;  
+    }
+    
+    &:active {
+        width: 395px;
+        height: 45px;
+        line-height: 45px;  
+    }
+}
+
+#youtube {
+    top: 47%;
+    left: 50%;
+}
+
+#discord {
+    top: 77%;
+    left: 50%;
+}
