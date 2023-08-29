@@ -2,8 +2,6 @@
     position: fixed;
     right: 0;
     bottom: 0;
-    min-width: 100%;
-    min-height: 100%;
 }
 
 
@@ -12,7 +10,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 500px;
+    width: 39vw;
     height: 200px;
     background-color: rgba(0, 0, 0, 0.5);
     border-radius: 25px;
@@ -61,7 +59,7 @@
 .button {
     position: absolute;
     transform: translate(-50%, -50%);
-    width: 400px;
+    width: 31.2vw;
     height: 50px;
     background-color: rgba(0, 0, 0, 0.7);  
     border: none;            
